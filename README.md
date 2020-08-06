@@ -1,8 +1,6 @@
 # node-auth
 
-The main purpose of this repository is to show a working Node.js API Server workflow in TypeScript. This project was built using TypeScript Node Starter package as a basic structure.
-
-[![Dependency Status](https://david-dm.org/Microsoft/TypeScript-Node-Starter.svg)](https://david-dm.org/Microsoft/TypeScript-Node-Starter) [![Build Status](https://travis-ci.org/Microsoft/TypeScript-Node-Starter.svg?branch=master)](https://travis-ci.org/Microsoft/TypeScript-Node-Starter)
+The main purpose of this repository is to show a working Node.js API Server workflow in TypeScript. This project was built using TypeScript Node Starter(https://github.com/microsoft/TypeScript-Node-Starter) package as a basic structure.
 
 # Pre-reqs
 To build and run this app locally you will need a few things:
@@ -26,18 +24,6 @@ npm start
 # Deploying the app
 There are many ways to deploy an Node app, and in general, nothing about the deployment process changes because you're using TypeScript.
 In this section, I'll walk you through how to deploy this app to Azure App Service using the extensions available in VS Code because I think it is the easiest and fastest way to get started, as well as the most friendly workflow from a developer's perspective.
-
-## Prerequisites
-- [**Azure account**](https://azure.microsoft.com/en-us/free/) - If you don't have one, you can sign up for free.
-The Azure free tier gives you plenty of resources to play around with including up to 10 App Service instances, which is what we will be using.
-- [**VS Code**](https://code.visualstudio.com/) - We'll be using the interface provided by VS Code to quickly deploy our app.
-- [**Azure App Service VS Code extension**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) - In VS Code, search for `Azure App Service` in the extension marketplace (5th button down on the far left menu bar), install the extension, and then reload VS Code.
-- **Create a cloud database** -
-For local development, running MongoDB on localhost is fine, however once we deploy we need a database with high availability.
-The easiest way to achieve this is by using a managed cloud database.
-There are many different providers, but the easiest one to get started with is [MongoLab](#mlab).
-- **SendGrid Account** -
-If you don't have one, you can sign up for free, we will need it to send emails. There are many different providers that Nodemailer supports ([Well-known services](https://nodemailer.com/smtp/well-known/)), we'll be using [SendGrid](#sendgrid).
 
 ### Build the app
 Building the app locally is required to generate a zip to deploy because the App Service won't execute build tasks.
@@ -208,17 +194,6 @@ npm run build   // runs full build including ESLint
 npm run lint    // runs only ESLint
 ```
 Notice that ESLint is not a part of the main watch task.
-
-### VSCode Extensions
-
-To enhance your development experience while working in VSCode we also provide you a list of the suggested extensions for working with this project:
-
-![Suggested Extensions In VSCode](https://user-images.githubusercontent.com/14539/34583539-6f290a30-f198-11e7-8804-30f40d418e20.png)
-
-- [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
-- [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
 
 # Dependencies
 Dependencies are managed through `package.json`.
